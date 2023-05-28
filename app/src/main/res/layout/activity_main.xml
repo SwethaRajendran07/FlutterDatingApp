@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Get OTP"
+    />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Enter Your \nPhone Number"
+        android:textColor="#0C0C0C"
+        android:textSize="20sp"
+         />
+
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_background"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:paddingLeft="6dp"
+        android:textColor="#131313"
+        android:textColorHighlight="#040303"
+        android:textColorHint="#131313"
+        android:textColorLink="#0B0909" />
+
+    <Button
+        android:id="@+id/buttonContinue"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FFBF00"
+        android:text="Continue"
+        android:textColor="#0C0C0C"
+        android:textColorLink="#0C0B0B"
+        app:cornerRadius="20dp" />
+
+</LinearLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".PhoneNumberActivity">-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="218dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="sans-serif-medium"-->
+<!--        android:text="Get OTP"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        tools:layout_editor_absoluteX="59dp"-->
+<!--        tools:layout_editor_absoluteY="173dp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_width="267dp"-->
+<!--        android:layout_height="63dp"-->
+<!--        android:fontFamily="sans-serif-black"-->
+<!--        android:text="Enter Your \nPhone Number"-->
+<!--        android:textColor="#0C0C0C"-->
+<!--        android:textSize="20sp"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        tools:layout_editor_absoluteX="59dp"-->
+<!--        tools:layout_editor_absoluteY="215dp" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/editTextPhoneNumber"-->
+<!--        android:layout_width="310dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Enter Phone Number"-->
+<!--        android:inputType="phone"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        tools:layout_editor_absoluteX="59dp"-->
+<!--        tools:layout_editor_absoluteY="278dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonContinue"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:backgroundTint="#FFBF00"-->
+<!--        android:text="Continue"-->
+<!--        android:textColor="#0C0C0C"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        tools:layout_editor_absoluteX="59dp"-->
+<!--        tools:layout_editor_absoluteY="341dp" />-->
+
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+<!-- activity_main.xml -->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/editTextPhoneNumber"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:hint="Phone Number"-->
+<!--        android:inputType="phone" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonContinue"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_below="@id/editTextPhoneNumber"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="Continue" />-->
+
+<!--</RelativeLayout>-->
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:theme="@style/Theme.FlutterDatingApp.AppBarOverlay">-->
+
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/toolbar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="?attr/actionBarSize"-->
+<!--            android:background="?attr/colorPrimary"-->
+<!--            app:popupTheme="@style/Theme.FlutterDatingApp.PopupOverlay" />-->
+
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+<!--    <include layout="@layout/content_main" />-->
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fab"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom|end"-->
+<!--        android:layout_marginEnd="@dimen/fab_margin"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        app:srcCompat="@android:drawable/ic_dialog_email" />-->
+
+<!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->

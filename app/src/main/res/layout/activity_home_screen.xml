@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:paddingLeft="150dp"
+        android:paddingTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Notes"
+        android:textColor="#070606"
+        android:textSize="20sp"
+         />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="550dp"
+        android:layout_height="150dp"
+        android:paddingLeft="100dp"
+        android:paddingTop="50dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Personal messages to you"
+        android:textSize="16sp"
+        />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView7"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_below="@+id/textView12"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-72dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/rounded_corners"
+        android:scaleType="fitStart"
+        android:src="@drawable/woman"
+        app:shapeAppearanceOverlay="@style/roundimageview" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="550dp"
+        android:layout_height="330dp"
+        android:paddingLeft="70dp"
+        android:paddingTop="310dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Meena, 23"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="550dp"
+        android:layout_height="350dp"
+        android:paddingLeft="70dp"
+        android:paddingTop="330dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Tap to review 50+ notes"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:fontFamily="sans-serif-black"
+            android:paddingLeft="40dp"
+            android:paddingTop="370dp"
+            android:text="Interested In You"
+            android:textColor="#070606"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="450dp"
+            android:layout_height="370dp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="40dp"
+            android:text="Premium members can \nview all their likes at once" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="380dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#FFBF00"
+        android:text="Upgrade"
+        android:textColor="#050505"
+        app:cornerRadius="20dp" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView10"
+        android:layout_width="161dp"
+        android:layout_height="245dp"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="292dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/rounded_corners"
+        android:scaleType="fitStart"
+        android:src="@drawable/teena"
+        app:shapeAppearanceOverlay="@style/roundimageview"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="850dp"
+        android:layout_height="680dp"
+        android:paddingLeft="35dp"
+        android:paddingTop="650dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Teena"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView11"
+        android:layout_width="161dp"
+        android:layout_height="245dp"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="292dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/rounded_corners"
+        android:scaleType="fitEnd"
+        android:src="@drawable/beena"
+        app:shapeAppearanceOverlay="@style/roundimageview"/>
+
+
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="850dp"
+        android:layout_height="680dp"
+        android:paddingLeft="225dp"
+        android:paddingTop="650dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Beena"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_nav"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomnav"
+        android:background="@color/white"
+        app:itemTextColor="@color/grey"
+        app:itemIconTint="@color/black"
+
+        >
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>
+
+
+
+<!--<ImageView-->
+<!--android:id="@+id/imageView7"-->
+<!--android:layout_width="330dp"-->
+<!--android:layout_height="390dp"-->
+<!--android:background="@drawable/rounded_corners"-->
+<!--android:paddingLeft="70dp"-->
+<!--android:paddingTop="40dp"-->
+<!--android:src="@drawable/woman" />-->
+
+
+<!--<ImageView-->
+<!--android:id="@+id/imageView10"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_marginTop="450dp"-->
+<!--android:layout_marginLeft="20dp"-->
+<!--android:layout_marginBottom="20dp"-->
+<!--android:layout_alignParentStart="true"-->
+<!--android:src="@drawable/teena"-->
+<!--    />-->
+
+<!--<ImageView-->
+<!--android:id="@+id/imageView11"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_marginTop="450dp"-->
+<!--android:layout_marginRight="20dp"-->
+<!--android:layout_marginBottom="20dp"-->
+<!--android:layout_alignParentEnd="true"-->
+<!--android:src="@drawable/beena"-->
+<!--    />-->
+

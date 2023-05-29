@@ -32,10 +32,10 @@ public class OTPActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otp);
 
+        String mobileNumber = getIntent().getStringExtra("mobileNumber");
 
         TextView textView = findViewById(R.id.textView8);
-        String enteredValue = getIntent().getStringExtra("enteredValue");
-        textView.setText(enteredValue);
+        textView.setText(mobileNumber);
 
         apiService = RetrofitClient.getClient().create(YourApiService.class);
 
@@ -51,7 +51,7 @@ public class OTPActivity extends AppCompatActivity {
                     Toast.makeText(OTPActivity.this, "Please enter the OTP", Toast.LENGTH_SHORT).show();
                 } else {
                     // Call your API to verify the entered OTP
-                    verifyOTP(enteredOTP);
+                    verifyOTP(mobileNumber,enteredOTP);
                 }
 
 
@@ -60,8 +60,7 @@ public class OTPActivity extends AppCompatActivity {
         });
 
     }
-    private void verifyOTP(String enteredOTP) {
-        String mobileNumber = getIntent().getStringExtra("mobileNumber");
+    private void verifyOTP(String mobileNumber,String enteredOTP) {
         System.out.println("mobileNumber: " + mobileNumber);
         System.out.println("otp: " + enteredOTP);
 //        OTPVerificationRequest otpVerificationRequest = new OTPVerificationRequest(mobileNumber, enteredOTP);
